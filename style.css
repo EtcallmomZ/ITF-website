@@ -1,20 +1,61 @@
 body {
     margin: 0;
+    background-color: lightpink;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 16px;
-    background-color: lightpink;
+    padding: 0 50px;
+    background-color: palevioletred;
     color: white;
 }
 
 .container{
-    margin: 8px 32px;
+    gap: 50;
+    
 }
 
 #my-title {
     color: palevioletred;
+}
+
+.description{
+    color: palevioletred;
+    font-size: 20;
+}
+.description_2{
+    text-align: right;
+    color: palevioletred;
+    font-size: 20;
+}
+.photo{
+     float: left;
+     margin-right: 20px;
+     width: 80px;
+     height: auto;
+}
+
+.photo_2{
+    float: right;
+    margin-right: 20px;
+    width: 180px;
+    height: auto;
+}
+
+.main-headers{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+    color: palevioletred;
+}
+
+.column-left{
+    flex: 50;
+}
+
+.column-right{
+    text-align: right;
 }
