@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: lightpink;
 }
 
 nav {
@@ -13,22 +12,36 @@ nav {
 }
 
 .container{
-    gap: 50;
+    gap: 50px;
     
 }
-
+textarea{
+    height: 10cm;
+    width: 34cm;
+    resize: none;
+}
 #my-title {
     color: palevioletred;
+    text-align: center;
+    padding-top: 25px;
 }
 
+.sweetpiano{
+    position: relative;
+    left: 600px;
+    top: 20%;
+
+}
 .description{
     color: palevioletred;
-    font-size: 20;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 .description_2{
     text-align: right;
     color: palevioletred;
-    font-size: 20;
 }
 .photo{
      float: left;
@@ -53,9 +66,11 @@ nav {
 }
 
 .column-left{
-    flex: 50;
+    grid: 50;
 }
 
 .column-right{
     text-align: right;
 }
+
+
