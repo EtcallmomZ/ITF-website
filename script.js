@@ -7,11 +7,23 @@ let current_cash = 0
 function calc(x,y) {
     current_account += Number(x)
     current_cash += Number(y)
-    const history_deploy =  `Current account balance : ${current_account}  , Current cash balance : ${current_cash}\n`
-    result.value += history_deploy
+    const history_log =  `Current account balance : ${current_account}, Current cash balance : ${current_cash}\n`
+    result.value += history_log
 }
 
-let 
-function money(x){
-
+function operator() {
+    const type = document.getElementById("money").value
+    const amount = Number(document.getElementById("amount").value)
+    if (type == "Deposite"){
+        current_account += amount
+        current_cash -= amount
+        const history_log = `Deposit : ${amount}, Currect account balance : ${current_account}, Current cash balance : ${current_cash}\n`
+        result.value += history_log
+    }
+    else if (type == "Withdraw"){
+        current_account -= amount
+        current_cash += amount
+        const history_log = `Withdraw : ${amount}, Currect account balance : ${current_account}, Current cash balance : ${current_cash}\n`
+        result.value += history_log
+    }
 }

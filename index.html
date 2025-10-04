@@ -41,7 +41,7 @@
                 <label for="input"></Output>Output balance:</label>
                 <input type="number" value="0"><br>
                 <label for="money_currency">Input currency:</label>
-                <select name="currency" id="currency">
+                <select name="currency" class="btn btn-primary dropdown-toggle" id="currency">
                     <option value="USD">USD</option>
                     <option value="THB">THB</option>
                 </select>
@@ -59,12 +59,12 @@
             </div>
             <h2 class="description">Bank Operation</h2>
             <img src="photo/hellokitty.png" alt="hellokitty" class="photo">
-            <select name="money" id="money" class="btn btn-secondary drowdown-toggle">
-                <option value="Deposite" id = deposite>Deposite</option>
-                <option value="Withdraw" id = withdraw>Withdraw</option>
+            <select name="money" id="money" class="btn btn-primary dropdown-toggle">
+                <option value="Deposite"  id = Deposite>Deposite</option>
+                <option value="Withdraw" id = Withdraw>Withdraw</option>
             </select>
-            <input type="number" value="1"><br>
-            <button type="button" class="btn btn-danger" value="proceed" onclick = "">Proceed</button>
+            <input type="number" value="1" id="amount"><br>
+            <button type="button" class="btn btn-danger" value="proceed" onclick = "operator()">Proceed</button>
         </div>
     </body>
     <script src="script.js"></script>
