@@ -1,3 +1,5 @@
+
+
 const account = document.getElementById("account")
 const cash = document.getElementById("cash")
 const result = document.getElementById("result")
@@ -27,3 +29,5 @@ function operator() {
         result.value += history_log
     }
 }
+
+document.getElementById("convert").addEventListener("click")
